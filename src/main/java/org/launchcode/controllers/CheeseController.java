@@ -60,8 +60,7 @@ public class CheeseController {
         Category cat = categoryDao.findOne(categoryId);
         newCheese.setCategory(cat);
         cheeseDao.save(newCheese);
-        System.out.println(cat.getName());
-        System.out.println(newCheese.getCategory().getName());
+
         return "redirect:";
     }
 
